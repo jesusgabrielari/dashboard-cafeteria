@@ -1,0 +1,45 @@
+<h1>Dashboard</h1>
+
+<h2>Gráfico que muestre las ventas mensuales de los últimos 12 meses.</h2>
+
+<%= line_chart @sales_group_by_month %>
+
+<h2>Gráfico que muestre la cantiad de ventas mensual de los últimos 12 meses.</h2>
+
+<%= line_chart @sales_group_by_month_count %>
+
+<h2>Gráfico que muestre el promedio de venta mensual de los últimos 12 meses.</h2>
+
+<%= line_chart @sales_group_by_month_average %>
+
+<h2>Cantidad de ventas según el origen del café en los ultimos 12 meses.</h2>
+
+<%= pie_chart @sales_group_by_origin %>
+
+<h2>Cantidad de ventas según el origen del café en los ultimos 6 meses.</h2>
+
+<%= pie_chart @sales_group_by_origin_two %>
+
+<h2>Cantidad de ventas según el origen del café en los ultimos 3 meses.</h2>
+
+<%= pie_chart @sales_group_by_origin_three %>
+
+<h2>Cantidad de ventas según el origen del café en el ultimo mes.</h2>
+
+<%= pie_chart @sales_group_by_origin_last %>
+
+<h2>Cantidad de ventas según el nombre de la mezcla del café en los ultimos 12 meses.</h2>
+
+<%= pie_chart @sales_group_by_blend %>
+
+<h2>Cantidad de ventas según el nombre de la mezcla del café en los ultimos 6 meses.</h2>
+
+<%= pie_chart @sales_group_by_blend_two %>
+
+<h2>Cantidad de ventas según el nombre de la mezcla del café en los ultimos 3 meses.</h2>
+
+<%= pie_chart @sales_group_by_blend_three %>
+
+<h2>Cantidad de ventas según el nombre de la mezcla del café en el ultimo mes.</h2>
+
+<%= pie_chart @sales_group_by_blend_last %>
